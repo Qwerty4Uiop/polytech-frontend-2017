@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Game.css';
 
-class Square extends React.Component {  
+class Square extends Component {  
   render() {
     return (
       <button className="square" onClick={() => this.props.onClick()}>
@@ -11,7 +11,7 @@ class Square extends React.Component {
   }
 }
 
-class Board extends React.Component {
+class Board extends Component {
   constructor() {
 	super();
 	this.state = {
@@ -84,7 +84,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
+class Game extends Component {
   render() {
     return (
       <div className="game">
